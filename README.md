@@ -49,7 +49,39 @@
     whenever a request enters into the system corresponding logs are generated and act as sequence of events. so that it will be easy to debug when it needed.
 
   12)  Admin Processes:
-    Some admin level tasks are required to execute as one-off process means command run manualy and ocaisionally. These tasks are not required very often and hence, we generally create a script for it .         
+    Some admin level tasks are required to execute as one-off process means command run manualy and ocaisionally. These tasks are not required very often and hence, we generally create a script for it .   
+
+
+
+
+
+
+    ATOMIC DESIGN:
+
+    Atomic Design is the method used in web and app development to create small , consistent, reusable and manageable components called atom. Basically in this method a large application is break into small small components instead of working on large application all at once. This methodology increase workflow and improve consistency of designing.
+
+    There are 5 components used in atomic design:
+
+    1) Atom:
+    Smallest component of a design system and devloped independentally.
+    Eg. button, icons etc.
+
+    2) Molecules:
+    Molecules are the combination of atoms which form a more specific part of design system.
+    
+    3) Organisms:
+    Combination of molecules are known as organism which form a more complete section of a web application.
+
+    4) Template:
+    Template is like a skeleton for a website or application. It offer structure for adding some content. 
+
+    5) Pages:
+    Pages are the final product of design process.It is the final stage of the design process.
+
+
+    Benefits of atomic design:
+    Scalability, reusability, consistency, ideal for complex design
+
  
 
     
