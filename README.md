@@ -84,5 +84,16 @@
 
  
 
-    
 
+ Git vs Github
+
+ 1) Git- Git is a version control system for tracking changes in source code, Git is installed locally in the system, Git is command line tool.
+
+ 2) Github- Github is a cloud based hosting service and has a graphical user interface for git. GitHub is the platform where you store and share your code using Git. Github is hosted on the web.
+
+
+ Git config:
+ Git config is the command used to set and get git configuration. This command can control everything from user info to behaviour.
+ It can control system level , locally and globally.
+
+ 
