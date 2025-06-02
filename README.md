@@ -1,6 +1,6 @@
 # JavaScript-Training
 
-12 Factor App:
+# 12 Factor App:
  
  The 12-Factor App is a methodology for building modern web applications that are:
  1) Portable 
@@ -56,9 +56,9 @@
 
 
 
-    ATOMIC DESIGN:
+# ATOMIC DESIGN:
 
-    Atomic Design is the method used in web and app development to create small , consistent, reusable and manageable components called atom. Basically in this method a large application is break into small small components instead of working on large application all at once. This methodology increase workflow and improve consistency of designing.
+Atomic Design is the method used in web and app development to create small , consistent, reusable and manageable components called atom. Basically in this method a large application is break into small small components instead of working on large application all at once. This methodology increase workflow and improve consistency of designing.
 
     There are 5 components used in atomic design:
 
@@ -85,14 +85,14 @@
  
 
 
- Git vs Github
+ # Git vs Github:
 
  1) Git- Git is a version control system for tracking changes in source code, Git is installed locally in the system, Git is command line tool.
 
  2) Github- Github is a cloud based hosting service and has a graphical user interface for git. GitHub is the platform where you store and share your code using Git. Github is hosted on the web.
 
 
- Git config:
+ # Git config:
  Git config is the command used to set and get git configuration. This command can control everything from user info to behaviour.
  It can control system level , locally and globally.
 
