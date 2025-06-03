@@ -1,9 +1,12 @@
 //Question-3:  Write a function expression that takes in another function as an argument
 
-function name(val){
-    console.log(val);
+function sayHello(name, callback){
+    console.log("hello", name);
+    callback();
 }
 
-function printName( name(John){
-    console.log(val);
-})
+function sayBye(){
+    console.log("Bye!");
+}
+
+sayHello("John", sayBye);
