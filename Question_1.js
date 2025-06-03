@@ -19,7 +19,6 @@ function printRandomNumber(){
 
 }
 
-let a=printRandomNumber();
-//let b=printRandomNumber();
+
 
 
