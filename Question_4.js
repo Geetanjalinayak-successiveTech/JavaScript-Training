@@ -2,7 +2,7 @@
 
 
 function squareNumber(number){
-    return number*number;
+    return number**2;
 }
 console.log(squareNumber(2));
 
