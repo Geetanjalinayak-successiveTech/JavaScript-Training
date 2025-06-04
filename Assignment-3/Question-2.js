@@ -44,3 +44,43 @@ for(let i=0;i<=4;i++)
 console.log(pattern2);
 
 
+/*
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+*/
+
+let pattern3="";
+for(let i=1;i<=5;i++)
+{
+    let val=1;
+    for(let j=5;j>=i;j--)
+    {
+        pattern3+=val;
+        val++;
+    }
+    
+    pattern3+="\n";
+}
+
+for(let i=2;i<=5;i++)
+{
+    let val=1;
+    for(let j=1;j<=i;j++)
+    {
+        pattern3+=val;
+        val++;
+    }
+    pattern3+="\n";
+}
+
+console.log(pattern3)
+
+
+
