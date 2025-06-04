@@ -20,6 +20,6 @@ console.log(sumOfTwoNumbers(2, 4));
 
 //Write a function expression that takes in a number and returns true if it's even and false if it's odd.
 
-const checkEvenOrOdd = (number) => (number % 2 === 0 ? true : false);
+const checkEvenOrOdd = (number) => (number % 2 === 0);
 
 console.log(checkEvenOrOdd(4));

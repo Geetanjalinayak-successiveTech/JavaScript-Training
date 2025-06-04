@@ -2,7 +2,7 @@
 
 
 function squareNumber(number){
-    console.log(number**2);
+    return number**2;
 }
-//console.log(squareNumber(2));
+console.log(squareNumber(2));
 
