@@ -8,13 +8,5 @@ let phone= prompt("Enter your phone no. :");
 function displayUserDetails(){
     console.log( "User name is", Name , "User age is" , age, "user phone no. is" , phone);
 }
-const displayName=document.getElementById("userName");
-const displayAge=document.getElementById("userAge");
-const displayPhoneNo=document.getElementById("userPhone");
-displayName.innerHTML=Name;
-displayAge.innerHTML=age;
-displayPhoneNo.innerHTML=phone;
-
-
 
 displayUserDetails();
