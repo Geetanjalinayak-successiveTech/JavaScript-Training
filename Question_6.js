@@ -3,11 +3,11 @@
 function checkEvenOrOdd(number){
     if(number%2===0)
     {
-        console.log("Even number");
+        return true;
     }
     else{
-        console.log("Odd Number");
+        return false;
     }
 }
 
-checkEvenOrOdd(4);
+console.log(checkEvenOrOdd(4));
