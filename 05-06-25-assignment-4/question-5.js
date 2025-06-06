@@ -21,5 +21,5 @@ function convertToCamelcase(str){
     return camelCasedString;
 }
 
-console.log(convertToCamelcase("hello john doe"));
+console.log(` camelCase: ${convertToCamelcase("hello john doe")}`);
 

@@ -19,4 +19,4 @@ function bubbleSort(arr)
 
 let arr=[5,4,3,2,1];
 
-console.log(bubbleSort(arr));
+console.log(`Sorted array: ${bubbleSort(arr)}`);

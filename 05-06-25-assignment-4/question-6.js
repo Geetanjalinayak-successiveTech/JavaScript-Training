@@ -14,4 +14,4 @@ function sumOfArray(arr)
 }
 
 let arr=[1,2,3,4];
-console.log(sumOfArray(arr));
+console.log(`Sum of elements : ${sumOfArray(arr)}`);

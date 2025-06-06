@@ -15,7 +15,7 @@ let arr = [
   [7, 8, 9],
 ];
 
-console.log(concatenateArray(arr));
+console.log(`Flatten array: ${concatenateArray(arr)}`);
 console.log(arr.flat()); // this is direct method to flatten array.
 
 

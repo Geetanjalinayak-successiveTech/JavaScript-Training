@@ -35,4 +35,4 @@ function reverseWord(word)
 
 let str="Hello John";
 
-console.log(reversedString(str));
+console.log(`Reversed String: ${reversedString(str)}`);

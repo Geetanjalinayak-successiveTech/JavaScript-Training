@@ -15,4 +15,4 @@ function removeDuplicates(arr) {
 }
 
 arr = [1, 2, 1, 2, 3, 4, 3, 5, 4];
-console.log(removeDuplicates(arr));
+console.log(`after removing duplicates: ${removeDuplicates(arr)}`);

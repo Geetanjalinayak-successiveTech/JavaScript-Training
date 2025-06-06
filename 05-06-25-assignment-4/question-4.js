@@ -8,5 +8,5 @@ function changeTolower(str) {
   return str.toLowerCase();
 }
 
-console.log(changeToUpper("hello"));
-console.log(changeTolower("HELLO"));
+console.log(` uppercase: ${changeToUpper("hello")}`);
+console.log(`lowercase: ${changeTolower("HELLO")}`);

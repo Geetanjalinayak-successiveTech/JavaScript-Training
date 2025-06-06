@@ -24,5 +24,6 @@ function removeDuplicates(string) {
 
   console.log(finalString);
 }
+let str="Hello Yellow";
 
-removeDuplicates("Hello Yellow");
+removeDuplicates(str);

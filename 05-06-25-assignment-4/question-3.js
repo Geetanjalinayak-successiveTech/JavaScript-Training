@@ -20,4 +20,4 @@ function countVariables(str) {
 }
 
 let str = "abcabcdabbcc";
-console.log(countVariables(str));
+console.log(`string with its occurence: ${countVariables(str)}`);

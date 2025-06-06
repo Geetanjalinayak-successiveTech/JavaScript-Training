@@ -22,5 +22,5 @@ function indexOfDuplicate(arr)
 }
 let arr=[1,2,3,1,2,4,3];
 
-console.log(indexOfDuplicate(arr));   //output=> [3,4,6]
+console.log(`Index of Duplicate in an array: ${indexOfDuplicate(arr)}`);   //output=> [3,4,6]
 
