@@ -3,14 +3,16 @@
 //input- [5,4,3,2,1,0];
 //output-[ 5, 4, 3, 2, 1, 0 ];
 
-function inverseOfArray(arr){
-    let resArr=[];
-    for(let i=0;i<arr.length;i++)
-    {
-        resArr[arr[i]]=i;
-    }
-    return resArr;
+function inverseOfArray(arr) {
+  let resArr = [];
+
+  arr.forEach((element, index) => {
+    resArr[element] = index;
+  });
+  return resArr;
 }
 
-let arr=[5,4,3,2,1,0];
-console.log(`After inverse value to index and index to value: ${inverseOfArray(arr)}`);
+let arr = [5, 4, 3, 2, 1, 0];
+console.log(
+  `After inverse value to index and index to value: ${inverseOfArray(arr)}`
+);

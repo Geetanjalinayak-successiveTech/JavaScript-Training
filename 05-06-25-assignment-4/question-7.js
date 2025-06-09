@@ -2,20 +2,6 @@
 
 function indexOfDuplicate(arr) {
   let len = arr.length;
-  // let resArr=[];
-
-  // for(let i=0;i<len;i++)
-  // {
-  //     for(let j=i+1;j<len;j++)
-  //     {
-  //         if(arr[i]===arr[j])
-  //         {
-  //             resArr.push(j);
-  //         }
-  //     }
-  // }
-
-  // return resArr;
 
   let unique = new Map();
   let duplicate = new Map();
