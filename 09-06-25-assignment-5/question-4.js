@@ -10,21 +10,11 @@ const originalObject = {
   }
 };
 
-function deepClone(obj) {
-  newObject = {};
-
-  for (const properties in obj) {
-    newObject[properties] = obj[properties];
-  }
-
-  return newObject;
-}
-
-let obj1 = deepClone(originalObject);
-
-obj1.age = 32;
 
 
+const newObject=structuredClone(originalObject);
+newObject.adrress.city="Pune";
 
-console.log(originalObject); // Creates deep copy
-console.log(obj1);
+
+console.log(originalObject); 
+console.log(newObject);
