@@ -2,28 +2,20 @@
 
 function removeDuplicates(string) {
   let len = string.length;
-  let res = "";
-  let finalString = "";
-
-  for (let i = len - 1; i >= 0; i--) {
-    let isduplicate = false;
-    for (let j = i - 1; j >= 0; j--) {
-      if (string[i] == string[j]) {
-        isduplicate = true;
-        break;
-      }
-    }
-    if (isduplicate == false) {
-      res += string[i];
+  const uniqueString=new Set();
+  let resultString="";
+  for(let i=0;i<len;i++)
+  {
+    if(!uniqueString.has(string[i]))
+    {
+      resultString+=string[i];
+      uniqueString.add(string[i]);
     }
   }
 
-  for (let i = res.length - 1; i >= 0; i--) {
-    finalString += res[i];
-  }
 
-  console.log(finalString);
+  return resultString;
 }
 let str="Hello Yellow";
 
-removeDuplicates(str);
+console.log(`After removing duplicates: ${removeDuplicates(str)}`);

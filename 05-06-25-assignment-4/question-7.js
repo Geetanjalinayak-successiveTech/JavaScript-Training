@@ -1,26 +1,37 @@
 // Q7. Write a program to find index of duplicate elements in an array
 
+function indexOfDuplicate(arr) {
+  let len = arr.length;
+  // let resArr=[];
 
-function indexOfDuplicate(arr)
-{
-    
-    let len=arr.length;
-    let resArr=[];
+  // for(let i=0;i<len;i++)
+  // {
+  //     for(let j=i+1;j<len;j++)
+  //     {
+  //         if(arr[i]===arr[j])
+  //         {
+  //             resArr.push(j);
+  //         }
+  //     }
+  // }
 
-    for(let i=0;i<len;i++)
-    {
-        for(let j=i+1;j<len;j++)
-        {
-            if(arr[i]===arr[j])
-            {
-                resArr.push(j);
-            }
-        }
+  // return resArr;
+
+  let unique = new Map();
+  let duplicate = new Map();
+
+  arr.forEach((val, ind) => {
+    if (unique.has(val)) {
+      duplicate.set(val, ind);
+    } else {
+      unique.set(val, ind);
     }
+  });
 
-    return resArr;
+  for (const [key, val] of duplicate) {
+    console.log(`${key} duplicate= ${val}`);
+  }
 }
-let arr=[1,2,3,1,2,4,3];
+let arr = [1, 2, 3, 1, 2, 4, 3];
 
-console.log(`Index of Duplicate in an array: ${indexOfDuplicate(arr)}`);   //output=> [3,4,6]
-
+console.log(`Index of Duplicate in an array: ${indexOfDuplicate(arr)}`); //output=> [3,4,6]

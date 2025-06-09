@@ -5,12 +5,19 @@ function intersectionOfArray(arr1,arr2)
     let len1=arr1.length;
     let len2 = arr2.length;
 
+    const newSet=new Set();
+
+    for(let i=0;i<len1;i++)
+    {
+        newSet.add(arr1[i]);
+    }
+
     let resArr=[];
     for(let i=0;i<len1;i++)
     {
-        if(arr2.includes(arr1[i]))
+        if(newSet.has(arr2[i]))
         {
-            resArr.push(arr1[i]);
+            resArr.push(arr2[i]);
         }
     }
 

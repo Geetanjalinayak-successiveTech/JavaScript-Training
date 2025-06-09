@@ -2,16 +2,16 @@
 
 function removeDuplicates(arr) {
   let len = arr.length;
-  let newArr = [];
-  for (let i = 0; i < len; i++) {
-    let val = arr[i];
-    if (!newArr.includes(val)) {
-      newArr.push(val);
-    } else {
-      continue;
-    }
+  let uniqueSet=new Set();
+  let uniqueArray=[];
+  for(let i=0;i<len;i++)
+  {
+    uniqueSet.add(arr[i]);
   }
-  return newArr;
+
+  uniqueArray =[...uniqueSet];
+  return uniqueArray;
+
 }
 
 arr = [1, 2, 1, 2, 3, 4, 3, 5, 4];

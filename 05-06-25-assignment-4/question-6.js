@@ -3,14 +3,10 @@
 function sumOfArray(arr)
 {
    let len=arr.length;
-   let sum=0;
-   
-   for(let i=0;i<len;i++)
-   {
-    sum+=arr[i];
-   }
+    const initialValue=0;
+    const sumValue=arr.reduce((accumulator,currentValue)=> accumulator+currentValue, initialValue);
 
-   return sum;
+    return sumValue;
 }
 
 let arr=[1,2,3,4];

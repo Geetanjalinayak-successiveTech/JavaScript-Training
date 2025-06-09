@@ -1,25 +1,15 @@
 // Q5. Write a program to convert given string in camel case ("hello john doe" => helloJohnDoe)
 
-function convertToCamelcase(str){
-    let len=str.length;
-    let i=0;
-    let camelCasedString=""
+function camelCasedString(str) {
+  let resString = "";
+  resString += str
+    .split(" ")
+    .map((word, index) =>
+      index === 0 ? word : word[0].toUpperCase() + word.slice(1)
+    )
+    .join("");
 
-    while(i<len)
-    {
-        if(str[i]===" ")
-        {
-            camelCasedString+=str[i+1].toUpperCase();
-            i=i+2;
-        }
-
-        else{
-            camelCasedString+=str[i];
-            i++;
-        }
-    }
-    return camelCasedString;
+  return resString;
 }
 
-console.log(` camelCase: ${convertToCamelcase("hello john doe")}`);
-
+console.log(` camelCase: ${camelCasedString("hello john doe")}`);
