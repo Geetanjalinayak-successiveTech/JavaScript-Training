@@ -6,9 +6,12 @@ function intersectionOfArray(arr1, arr2) {
 
   const newSet = new Set();
 
-  for (let i = 0; i < len1; i++) {
-    newSet.add(arr1[i]);
-  }
+  
+
+  arr1.forEach((element )=> {
+    newSet.add(element);
+    
+  });
 
   const resArr = arr2.filter((val) => newSet.has(val));
 
