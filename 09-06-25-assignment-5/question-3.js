@@ -6,8 +6,10 @@ let arr = [
   { name: "Doe", age: 26, id: 3 },
 ];
 
-for(val of arr)
-{
-    delete(val.id);
-}
+
+
+arr.forEach(element => {
+  delete(element.id);
+  
+});
 console.log(arr);

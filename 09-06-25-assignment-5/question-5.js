@@ -23,7 +23,7 @@ function flattenObject(obj, pre="", result={})
        
             else{
             result[newKey]=obj[key];
-           // console.log(newKey+":" ,obj[key]);
+           
         }
 
     }
