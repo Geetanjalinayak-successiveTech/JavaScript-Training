@@ -7,6 +7,16 @@ const obj={
     Designation:"software Developer",
 }
 
-for(const porperties in obj){
-    console.log(`${porperties} : ${obj[porperties]}`);
-}
+// Object.keys(obj).forEach((ele,index )=> {
+//     const value=Object.values(obj);
+//     console.log(`${ele}: ${value[index]}`)
+// });
+
+
+Object.keys(obj).forEach((ele,index )=> {
+    console.log(`${ele} : ${Object.values(obj)[index]}`)
+});
+
+
+
+
