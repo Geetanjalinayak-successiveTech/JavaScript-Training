@@ -15,7 +15,7 @@ class Person{
 
     greet()
     {
-        console.log(`hii ${this.name}`);
+        console.log(`hii ${this.name} , your age is ${this.age}, gender:${this.gender} , and you have intrest in ${this.intrests}`);
     }
 
     farewell()

@@ -8,13 +8,19 @@ class BankAccount {
 
   //methods
   deposite(val) {
-    this.balance += val;
-    return this.balance;
+    if (val > 0) {
+      this.balance += val;
+    } else {
+      console.log("amount must be greater than 0");
+    }
   }
 
   withdraw(val) {
-    this.balance -= val;
-    return this.balance;
+    if (val <= this.balance) {
+      this.balance -= val;
+    } else {
+      console.log("Insufficient Amount :(");
+    }
   }
 
   displayBalance() {
@@ -23,7 +29,6 @@ class BankAccount {
 }
 
 let johnAccount = new BankAccount("John", 10000);
-
-console.log(johnAccount.deposite(100));
-console.log(johnAccount.withdraw(100));
+johnAccount.deposite(100);
+johnAccount.withdraw(10000000);
 johnAccount.displayBalance();
