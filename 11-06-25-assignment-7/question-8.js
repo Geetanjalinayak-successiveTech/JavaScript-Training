@@ -5,17 +5,17 @@ const url2 = "https://jsonplaceholder.typicode.com/todos/2";
 const url3 = "https://jsonplaceholder.typicode.com/todos/3";
 
 let promise1 = async () => {
-  const getData1 = await fetch(url1);
+  const getData1 = (await fetch(url1)).json();
   return getData1;
 };
 
 let promise2 = async () => {
-  const getData2 = await fetch(url2);
+  const getData2 = (await fetch(url2)).json();
   return getData2;
 };
 
 let promise3 = async () => {
-  const getData2 = await fetch(url3);
+  const getData2 = (await fetch(url3)).json();
   return getData2;
 };
 

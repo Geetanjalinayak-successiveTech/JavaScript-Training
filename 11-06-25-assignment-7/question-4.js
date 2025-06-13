@@ -1,6 +1,6 @@
 //4. Write a program to implement a Promise-based rate limiter, that limits the number of concurrent requests to a certain number
 
-function fn(id) {
+function createTask(id) {
   return () =>
     new Promise((resolve) => {
       console.log("start", id);
@@ -12,16 +12,16 @@ function fn(id) {
 }
 
 const task = [
-  fn(1),
-  fn(2),
-  fn(3),
-  fn(4),
-  fn(5),
-  fn(6),
-  fn(7),
-  fn(8),
-  fn(9),
-  fn(10),
+  createTask(1),
+  createTask(2),
+  createTask(3),
+  createTask(4),
+  createTask(5),
+  createTask(6),
+  createTask(7),
+  createTask(8),
+  createTask(9),
+  createTask(10),
 ];
 
 async function runTasks(tasks, limit) {
@@ -40,3 +40,4 @@ async function runTasks(tasks, limit) {
 runTasks(task, 3).then((res) => {
   console.log("All done:", res);
 });
+
