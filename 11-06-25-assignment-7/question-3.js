@@ -6,6 +6,7 @@
 //   }, 1000);
 // };
 
+
 function fetchDataWithPromise() {
   return new Promise((resolve, reject) => {
     if (true) {

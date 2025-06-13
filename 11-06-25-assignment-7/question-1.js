@@ -1,15 +1,23 @@
 //Q1. Give an example of using a callback function to handle an asynchronous operation in JavaScript (Use any open api to make a call)
 
-function greet() {
-  console.log("Hello World!!");
-}
+function fetchUrl(callback) {
+  const url = "https://jsonplaceholder.typicode.com/todos/1";
 
-function fn(callback) {
   setTimeout(() => {
-    console.log("this will execute after 5 sec");
-  }, 5000);
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => callback(data))
+      .catch((error) => callback(error));
 
-  callback();
+  }, 1000);
+  
 }
 
-fn(greet);
+function callback(data)
+{
+  console.log(data);
+}
+
+fetchUrl(callback);
+
+
