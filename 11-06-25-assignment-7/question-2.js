@@ -1,18 +1,24 @@
 // Q2. Give an example of using multiple callback functions in a single function in JavaScript
 
-function greet(name) {
-  console.log(`Hello! My name is ${name}`);
+function fn(a, b, callback1, callback2) {
+  console.log("Call");
+
+  callback1.call(null, a, b);
+
+  console.log("Apply");
+  callback2.apply(null, [a, b]);
+
+  console.log("Bind");
+  const binding = callback1.bind(null, a, b);
+  binding();
 }
 
-function farewell(name, callback) {
-  console.log("Good Bye!!");
-  callback();
+function add(a, b) {
+  console.log(`result: ${a + b}`);
 }
 
-function introduction(name, goodbye) {
-  console.log(name);
-  //greeting(name);
-  goodbye(greet);
+function sub(a, b) {
+  console.log(`result: ${a - b}`);
 }
 
-introduction("Rohit", farewell);
+fn(2, 3, add, sub);
