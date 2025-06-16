@@ -1,7 +1,27 @@
 
 //// Find Error in below questions and rectify them
 
-let myString = 'hello world';
+// let myString = 'hello world';
+// if (myString.length > 0) {
+//     console.log('The length of the string is: ' + myString.length);
+// } else {
+//     console.log('The string is empty');
+// }
+
+// let myNumber = parseInt(myString);
+// if (myNumber) {
+//    console.log('The number is: ' + myNumber);
+// } else {
+//    console.log('The value is not a number');
+// }
+
+
+// error->  the code does not correctly handle the case when myString is "0"
+
+
+//corrected code
+
+let myString = '0';
 if (myString.length > 0) {
     console.log('The length of the string is: ' + myString.length);
 } else {
@@ -9,11 +29,8 @@ if (myString.length > 0) {
 }
 
 let myNumber = parseInt(myString);
-if (myNumber) {
+if (!isNaN(myNumber)) {
    console.log('The number is: ' + myNumber);
 } else {
    console.log('The value is not a number');
 }
-
-
-// No error in this code
