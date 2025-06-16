@@ -6,14 +6,15 @@
 //   }, 1000);
 // };
 
-
 function fetchDataWithPromise() {
   return new Promise((resolve, reject) => {
-    if (true) {
-      setTimeout(resolve("Data fetched successfully"), 1000);
-    } else {
-      reject(error);
-    }
+    setTimeout(() => {
+      if (true) {
+        resolve("Data fetched successfully");
+      } else {
+        reject("error");
+      }
+    }, 1000);
   });
 }
 
